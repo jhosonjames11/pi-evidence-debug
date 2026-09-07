@@ -1,0 +1,10 @@
+node_modules/
+coverage/
+.env
+.env.*
+!.env.example
+.pi/
+*.session.json
+*.log
+__pycache__/
+*.py[cod]

@@ -1,0 +1,22 @@
+{
+  "name": "pi-evidence-debug",
+  "version": "0.1.0",
+  "description": "Evidence-first debugging extension for Pi",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22.0.0"
+  },
+  "scripts": {
+    "test": "vitest --run",
+    "typecheck": "tsc --noEmit",
+    "check:secrets": "node scripts/check-secrets.mjs",
+    "check": "npm run test && npm run typecheck && npm run check:secrets"
+  },
+  "devDependencies": {
+    "@earendil-works/pi-coding-agent": "^0.85.1",
+    "@types/node": "^22.0.0",
+    "typescript": "^5.9.3",
+    "vitest": "^4.1.9"
+  }
+}
